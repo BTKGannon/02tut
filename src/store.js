@@ -24,7 +24,7 @@ export default createStore({
     }),
     search: '',
     setSearch: action((state, payload) => {
-        state.search = payload;
+        state.search.push(payload);
     }),
     searchResults: [],
     setSearchResults: action((state, payload) => {
